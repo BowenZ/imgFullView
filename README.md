@@ -6,6 +6,8 @@
 
 使用该插件可以使图片高度为屏幕的100%，当左右倾斜手机时，图片会随着手机的倾斜角度而移动，方便显示较宽的图片。
 
+**[Demo Page](http://bowenz.github.io/demo/2015-09-15-imgFullview/)**
+
 **用法：**
 `var fullView = new ImgFullView('selector'); //初始化插件，'selector'为目标图片外包裹容器的选择器，如：`
 
@@ -18,7 +20,7 @@
 ```
 var fullView = new ImgFullView('.box', {
 	time: 60, //监听陀螺仪数值改变的时间间隔
-    sensitivity: 8 //倾斜度变化单位制左右移动的间隔
+    sensitivity: 8 //倾斜度变化单位值左右移动的间隔
 });
 ```
 

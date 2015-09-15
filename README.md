@@ -9,11 +9,18 @@
 **用法：**
 `var fullView = new ImgFullView('selector'); //初始化插件，'selector'为目标图片外包裹容器的选择器，如：`
 
-`<div class="box">`
-`    <img src=".." alt="..">`
-`</div>`
+```
+<div class="box">
+    <img src=".." alt="..">
+</div>
+```
 
-`var fullView = new ImgFullView('.box');`
+```
+var fullView = new ImgFullView('.box', {
+	time: 60, //监听陀螺仪数值改变的时间间隔
+    sensitivity: 8 //倾斜度变化单位制左右移动的间隔
+});
+```
 
 `fullView.setCurrentIndex(index); //当有多个图片时，可以指定某个图片为活动状态`
 
